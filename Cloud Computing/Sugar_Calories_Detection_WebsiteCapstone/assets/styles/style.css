@@ -15,13 +15,11 @@ body {
    scroll-behavior: smooth;
 }
 
-
-
 main{
    overflow: auto;
 }
   
- h1, h2, h3 {
+ h1, h2 {
     color: #194350
  }
   
@@ -33,15 +31,10 @@ main{
     font-weight: bold;
  }
 
-
-
  #Feature{
    padding: 6rem;
    background-color: #F6F9F8;
 }
-
-
-
 
  .grid-container {
    display: grid;
@@ -62,8 +55,6 @@ main{
 .featurePict{
    height: 500px;
 }
-
-
 
 .grid-child-uploadPict-1{
    text-align: right;
@@ -122,11 +113,6 @@ main{
    margin-top: 0rem;
 }
 
-
-
-
-
-
 #About{
    padding: 6rem;
 }
@@ -144,7 +130,6 @@ main{
    padding-top: 8rem;
 }
 
-
 #ContactUs{
    padding: 6rem;
 }
@@ -153,10 +138,6 @@ main{
    font-size: 2.5rem;
    font-family: 'Rubik', sans-serif;
 }
-
-
-
-
 
 @media screen and (max-width: 1000px) {
    #content,aside{
@@ -209,9 +190,9 @@ header {
  }
 
  table{
-    background-color: #FF8882;
-    color: #F6F9F8;
-    border-color: #194350;
+    /* background-color: #FF8882; */
+    color: #194350;
+    border-color: #FF8882;
  }
 
  /* ================UPLOAD PICT HTML=================== */
@@ -249,3 +230,31 @@ footer2 {
    text-align: center;
    font-weight: bold;
  }
+
+/* =========RESULT HTML========= */
+.resultHeadTilte{
+   text-align: center;
+   font-family: 'Rubik', sans-serif;
+   font-size: 2.5rem;
+   margin-top: 2rem;
+}
+
+.child-desc-1{
+   margin-left: 10rem;
+}
+
+.child-desc-1-1{
+   background-color: #FF8882;
+   margin-left: 10rem;
+   padding: 1rem 0 1rem 0;
+}
+
+.child-desc-2{
+   margin-right: 10rem;
+}
+
+.child-desc-2-1{
+   background-color: #8AD5CB;
+   margin-right: 10rem;
+   padding: 1rem 0 1rem 0;
+}
