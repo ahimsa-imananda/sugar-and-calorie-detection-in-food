@@ -15,10 +15,7 @@ body {
    scroll-behavior: smooth;
 }
 
-/* header {
-   display: inline;
-   background-color: #F6F9F8;
-} */
+
 
 main{
    overflow: auto;
@@ -35,6 +32,8 @@ main{
     text-align: center;
     font-weight: bold;
  }
+
+
 
  #Feature{
    padding: 6rem;
@@ -64,30 +63,13 @@ main{
    height: 500px;
 }
 
-.grid-container-uploadPict {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-gap: 10px;
-   padding-top: 1.5rem;
-}
+
 
 .grid-child-uploadPict-1{
    text-align: right;
 }
 
-/* =====flex split===== */
-/* .flex-uploadPict {
-   display: flex;
-}
 
-.flex-child {
-   flex: 1;
-   border: 2px solid yellow;
-}  
-
-.flex-child:first-child {
-   margin-right: 20px;
-}  */
 /* =====flex split===== */
 
 .uploadPict-1{
@@ -145,35 +127,6 @@ main{
 
 
 
-/* .float-child.green {
-   margin-right: 20px;
-   width: 40%;
-   float: left;
-}
-
-.float-child.blue {
-   float: right;
-   width: 40%;
-}
-
-
-
-
-.flex-container {
-   display: flex;
-}
-
-.flex-child {
-   flex: 1;
-   border: 2px solid yellow;
-}  
-
-.flex-child:first-child {
-   margin-right: 20px;
-}  */
-
-
-
 #About{
    padding: 6rem;
 }
@@ -191,9 +144,6 @@ main{
    padding-top: 8rem;
 }
 
-/* .grid-container-uploadPict a:hover{
-width: 200px;
-} */
 
 #ContactUs{
    padding: 6rem;
@@ -208,27 +158,6 @@ width: 200px;
 
 
 
-/* #content {
-   float: left;
-   width: 75%;
-} */
-
-/* aside {
-   float: right;
-   width: 25%;
-   padding-left: 20px;
-} */
-
-/* .asideRight{
-   float: right;
-   width: 50%;
-}
-
-.asideLeft{
-   float: left;
-   width: 50%;
-} */
-
 @media screen and (max-width: 1000px) {
    #content,aside{
        width: 100%;
@@ -237,94 +166,14 @@ width: 200px;
 }
 
 
- /* .shadowbox {
-   width: 70%;
-   border: 1px solid #333;
-   box-shadow: 8px 8px 5px #444;
-   padding: 8px 12px;
-   margin: 1rem;
-   background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
-}
-
-.shadowbox>div{
-   width: 100%;
-   height: 30rem;
-   overflow: hidden;
-}
-
-.shadowbox>div>img{
-   width: inherit;
-} */
-
-
-
-
-
-
-/* .profile header {
-   text-align: center;
-}
-
-.featured-image {
-   width: 100%;
-   max-height: 300px;
-   object-fit: cover;
-   object-position: center;
-}
-
-.profile img {
-   width: 200px;
-}
-
-.card {
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   border-radius: 5px;
-   padding: 20px;
-   margin-top: 20px;
-}
-*/
-
 
 /* ======================navbar=========================== */
-
-/* .jumbotron {
-   font-size: 20px;
-   color: #194350;
-   font-weight: bold;
-} 
-
-nav a {
-   font-size: 18px;
-   text-decoration: none;
-   color: #FF8882;
-   font-weight: bold;
-}
-
-
-nav {
-   background-color: #F6F9F8;
-   padding: 5px;
-   position: sticky;
-   top: 0;
-}
-
-.navButton{
-   text-align: center;
-} */
 
 nav a:hover {
    font-family: 'Mulish', sans-serif;
    color: #194350;
    font-weight: 800;
 }
-
-/* nav li {
-   display: inline;
-   list-style-type: none;
-   margin-right: 20px;
-} */
-
- /* .satu .dua */
 
 .navtitle{
    width: 210px;
@@ -359,3 +208,44 @@ header {
    width: 100%;
  }
 
+ table{
+    background-color: #FF8882;
+    color: #F6F9F8;
+    border-color: #194350;
+ }
+
+ /* ================UPLOAD PICT HTML=================== */
+.uploadHeadTilte{
+   text-align: center;
+   font-family: 'Rubik', sans-serif;
+   font-size: 2.5rem;
+   margin-top: 2rem;
+}
+
+form{
+   margin-top: 5rem;
+}
+
+
+.ChooseBtn{
+   border-style: hidden;
+   border-radius: 5%;
+   background-color: #FF8882;
+   color: white;
+}
+
+#imgPrev{
+   max-width: 30rem;
+   max-height: 30rem;
+}
+
+footer2 {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   padding: 20px;
+   color: #194350;
+   background-color: #F6F9F8;
+   text-align: center;
+   font-weight: bold;
+ }
