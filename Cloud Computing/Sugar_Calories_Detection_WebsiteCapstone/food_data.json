@@ -1,0 +1,608 @@
+[
+   {
+      "index":"0",
+      "label":"Apple pie",
+      "sugar":"17",
+      "calorie":"237"
+   },
+   {
+      "index":"1",
+      "label":"Baby back ribs",
+      "sugar":"0",
+      "calorie":"234"
+   },
+   {
+      "index":"2",
+      "label":"Baklava",
+      "sugar":"17",
+      "calorie":"230"
+   },
+   {
+      "index":"3",
+      "label":"Beef carpaccio",
+      "sugar":"0.7",
+      "calorie":"181"
+   },
+   {
+      "index":"4",
+      "label":"Beef tartare",
+      "sugar":"0",
+      "calorie":"127"
+   },
+   {
+      "index":"5",
+      "label":"Beet salad",
+      "sugar":"6.4",
+      "calorie":"183"
+   },
+   {
+      "index":"6",
+      "label":"Beignets",
+      "sugar":"7.7",
+      "calorie":"262"
+   },
+   {
+      "index":"7",
+      "label":"Bibimbap",
+      "sugar":"1.3",
+      "calorie":"118"
+   },
+   {
+      "index":"8",
+      "label":"Bread pudding",
+      "sugar":"27.5",
+      "calorie":"188.5"
+   },
+   {
+      "index":"9",
+      "label":"Breakfast burrito",
+      "sugar":"1.3",
+      "calorie":"206"
+   },
+   {
+      "index":"10",
+      "label":"Bruschetta",
+      "sugar":"1",
+      "calorie":"72"
+   },
+   {
+      "index":"11",
+      "label":"Caesar salad",
+      "sugar":"4.4",
+      "calorie":"94"
+   },
+   {
+      "index":"12",
+      "label":"Cannoli",
+      "sugar":"7.9",
+      "calorie":"293.6"
+   },
+   {
+      "index":"13",
+      "label":"Caprese salad",
+      "sugar":"1.3",
+      "calorie":"141"
+   },
+   {
+      "index":"14",
+      "label":"Carrot cake",
+      "sugar":"29.6",
+      "calorie":"334.7"
+   },
+   {
+      "index":"15",
+      "label":"Ceviche",
+      "sugar":"2",
+      "calorie":"165"
+   },
+   {
+      "index":"16",
+      "label":"Cheesecake",
+      "sugar":"22",
+      "calorie":"321"
+   },
+   {
+      "index":"17",
+      "label":"Cheese plate",
+      "sugar":"6.59",
+      "calorie":"408"
+   },
+   {
+      "index":"18",
+      "label":"Chicken curry",
+      "sugar":"2.14",
+      "calorie":"157"
+   },
+   {
+      "index":"19",
+      "label":"Chicken quesadilla",
+      "sugar":"2.28",
+      "calorie":"325"
+   },
+   {
+      "index":"20",
+      "label":"Chicken wings",
+      "sugar":"2.04",
+      "calorie":"211"
+   },
+   {
+      "index":"21",
+      "label":"Chocolate cake",
+      "sugar":"40",
+      "calorie":"389"
+   },
+   {
+      "index":"22",
+      "label":"Chocolate mousse",
+      "sugar":"14.8",
+      "calorie":"225"
+   },
+   {
+      "index":"23",
+      "label":"Churros",
+      "sugar":"23.38",
+      "calorie":"419"
+   },
+   {
+      "index":"24",
+      "label":"Clam chowder",
+      "sugar":"2.7",
+      "calorie":"61"
+   },
+   {
+      "index":"25",
+      "label":"Club sandwich",
+      "sugar":"4.99",
+      "calorie":"257"
+   },
+   {
+      "index":"26",
+      "label":"Crab cakes",
+      "sugar":"0.51",
+      "calorie":"155"
+   },
+   {
+      "index":"27",
+      "label":"Creme brulee",
+      "sugar":"17.88",
+      "calorie":"110"
+   },
+   {
+      "index":"28",
+      "label":"Croque madame",
+      "sugar":"4",
+      "calorie":"458"
+   },
+   {
+      "index":"29",
+      "label":"Cup cakes",
+      "sugar":"23.9",
+      "calorie":"453.5"
+   },
+   {
+      "index":"30",
+      "label":"Deviled eggs",
+      "sugar":"1.07",
+      "calorie":"198"
+   },
+   {
+      "index":"31",
+      "label":"Donuts",
+      "sugar":"35.1",
+      "calorie":"412"
+   },
+   {
+      "index":"32",
+      "label":"Dumplings",
+      "sugar":"1.23",
+      "calorie":"124"
+   },
+   {
+      "index":"33",
+      "label":"Edamame",
+      "sugar":"2.11",
+      "calorie":"140"
+   },
+   {
+      "index":"34",
+      "label":"Eggs benedict",
+      "sugar":"0.94",
+      "calorie":"276"
+   },
+   {
+      "index":"35",
+      "label":"Escargots",
+      "sugar":"0",
+      "calorie":"42"
+   },
+   {
+      "index":"36",
+      "label":"Falafel",
+      "sugar":"3",
+      "calorie":"415"
+   },
+   {
+      "index":"37",
+      "label":"Filet mignon",
+      "sugar":"0",
+      "calorie":"170"
+   },
+   {
+      "index":"38",
+      "label":"Fish and chips",
+      "sugar":"0.4",
+      "calorie":"137.6"
+   },
+   {
+      "index":"39",
+      "label":"Foie gras",
+      "sugar":"1",
+      "calorie":"462"
+   },
+   {
+      "index":"40",
+      "label":"French fries",
+      "sugar":"0.3",
+      "calorie":"312"
+   },
+   {
+      "index":"41",
+      "label":"French onion soup",
+      "sugar":"1.48",
+      "calorie":"153"
+   },
+   {
+      "index":"42",
+      "label":"French toast",
+      "sugar":"7.5",
+      "calorie":"244"
+   },
+   {
+      "index":"43",
+      "label":"Fried calamari",
+      "sugar":"0.66",
+      "calorie":"125"
+   },
+   {
+      "index":"44",
+      "label":"Fried rice",
+      "sugar":"0.76",
+      "calorie":"168"
+   },
+   {
+      "index":"45",
+      "label":"Frozen yogurt",
+      "sugar":"19.06",
+      "calorie":"107"
+   },
+   {
+      "index":"46",
+      "label":"Garlic bread",
+      "sugar":"0.42",
+      "calorie":"330"
+   },
+   {
+      "index":"47",
+      "label":"Gnocchi",
+      "sugar":"0.97",
+      "calorie":"133"
+   },
+   {
+      "index":"48",
+      "label":"Greek salad",
+      "sugar":"1.89",
+      "calorie":"101"
+   },
+   {
+      "index":"49",
+      "label":"Grilled cheese sandwich",
+      "sugar":"4.8",
+      "calorie":"350"
+   },
+   {
+      "index":"50",
+      "label":"Grilled salmon",
+      "sugar":"0.11",
+      "calorie":"171"
+   },
+   {
+      "index":"51",
+      "label":"Guacamole",
+      "sugar":"0.71",
+      "calorie":"157"
+   },
+   {
+      "index":"52",
+      "label":"Gyoza",
+      "sugar":"1.2",
+      "calorie":"237"
+   },
+   {
+      "index":"53",
+      "label":"Hamburger",
+      "sugar":"3.4",
+      "calorie":"295"
+   },
+   {
+      "index":"54",
+      "label":"Hot and sour soup",
+      "sugar":"0.65",
+      "calorie":"67"
+   },
+   {
+      "index":"55",
+      "label":"Hot dog",
+      "sugar":"2.69",
+      "calorie":"294"
+   },
+   {
+      "index":"56",
+      "label":"Huevos rancheros",
+      "sugar":"2.08",
+      "calorie":"119"
+   },
+   {
+      "index":"57",
+      "label":"Hummus",
+      "sugar":"0.46",
+      "calorie":"177"
+   },
+   {
+      "index":"58",
+      "label":"Ice cream",
+      "sugar":"22.3",
+      "calorie":"201"
+   },
+   {
+      "index":"59",
+      "label":"Lasagna",
+      "sugar":"2",
+      "calorie":"360"
+   },
+   {
+      "index":"60",
+      "label":"Lobster bisque",
+      "sugar":"4",
+      "calorie":"100"
+   },
+   {
+      "index":"61",
+      "label":"Lobster roll sandwich",
+      "sugar":"0.4",
+      "calorie":"202.8"
+   },
+   {
+      "index":"62",
+      "label":"Macaroni and cheese",
+      "sugar":"3.9",
+      "calorie":"389"
+   },
+   {
+      "index":"63",
+      "label":"Macarons",
+      "sugar":"50",
+      "calorie":"420"
+   },
+   {
+      "index":"64",
+      "label":"Miso soup",
+      "sugar":"1.08",
+      "calorie":"35"
+   },
+   {
+      "index":"65",
+      "label":"Mussels",
+      "sugar":"0",
+      "calorie":"86"
+   },
+   {
+      "index":"66",
+      "label":"Nachos",
+      "sugar":"2",
+      "calorie":"310"
+   },
+   {
+      "index":"67",
+      "label":"Omelette",
+      "sugar":"0.4",
+      "calorie":"187"
+   },
+   {
+      "index":"68",
+      "label":"Onion rings",
+      "sugar":"4.8",
+      "calorie":"371"
+   },
+   {
+      "index":"69",
+      "label":"Oysters",
+      "sugar":"0.6",
+      "calorie":"199"
+   },
+   {
+      "index":"70",
+      "label":"Pad thai",
+      "sugar":"8.3",
+      "calorie":"400"
+   },
+   {
+      "index":"71",
+      "label":"Paella",
+      "sugar":"3.6",
+      "calorie":"489"
+   },
+   {
+      "index":"72",
+      "label":"Pancakes",
+      "sugar":"16",
+      "calorie":"227"
+   },
+   {
+      "index":"73",
+      "label":"Panna cotta",
+      "sugar":"17.8",
+      "calorie":"137"
+   },
+   {
+      "index":"74",
+      "label":"Peking duck",
+      "sugar":"21",
+      "calorie":"340"
+   },
+   {
+      "index":"75",
+      "label":"Pho",
+      "sugar":"10.5",
+      "calorie":"450"
+   },
+   {
+      "index":"76",
+      "label":"Pizza",
+      "sugar":"3.6",
+      "calorie":"266"
+   },
+   {
+      "index":"77",
+      "label":"Pork chop",
+      "sugar":"23",
+      "calorie":"231"
+   },
+   {
+      "index":"78",
+      "label":"Poutine",
+      "sugar":"2",
+      "calorie":"402"
+   },
+   {
+      "index":"79",
+      "label":"Prime rib",
+      "sugar":"0",
+      "calorie":"410"
+   },
+   {
+      "index":"80",
+      "label":"Pulled pork sandwich",
+      "sugar":"15",
+      "calorie":"168"
+   },
+   {
+      "index":"81",
+      "label":"Ramen",
+      "sugar":"1.6",
+      "calorie":"436"
+   },
+   {
+      "index":"82",
+      "label":"Ravioli",
+      "sugar":"3.7",
+      "calorie":"77"
+   },
+   {
+      "index":"83",
+      "label":"Red velvet cake",
+      "sugar":"25",
+      "calorie":"367"
+   },
+   {
+      "index":"84",
+      "label":"Risotto",
+      "sugar":"1.4",
+      "calorie":"123.9"
+   },
+   {
+      "index":"85",
+      "label":"Samosa",
+      "sugar":"9.5",
+      "calorie":"262"
+   },
+   {
+      "index":"86",
+      "label":"Sashimi",
+      "sugar":"0",
+      "calorie":"114"
+   },
+   {
+      "index":"87",
+      "label":"Scallops",
+      "sugar":"0",
+      "calorie":"112"
+   },
+   {
+      "index":"88",
+      "label":"Seaweed salad",
+      "sugar":"3.2",
+      "calorie":"106"
+   },
+   {
+      "index":"89",
+      "label":"Shrimp and grits",
+      "sugar":"0.3",
+      "calorie":"179"
+   },
+   {
+      "index":"90",
+      "label":"Spaghetti bolognese",
+      "sugar":"2.1",
+      "calorie":"100"
+   },
+   {
+      "index":"91",
+      "label":"Spaghetti carbonara",
+      "sugar":"0.5",
+      "calorie":"203.6"
+   },
+   {
+      "index":"92",
+      "label":"Spring rolls",
+      "sugar":"1.4",
+      "calorie":"236.8"
+   },
+   {
+      "index":"93",
+      "label":"Steak",
+      "sugar":"0",
+      "calorie":"282.4"
+   },
+   {
+      "index":"94",
+      "label":"Strawberry shortcake",
+      "sugar":"8",
+      "calorie":"169.8"
+   },
+   {
+      "index":"95",
+      "label":"Sushi",
+      "sugar":"3.5",
+      "calorie":"174.5"
+   },
+   {
+      "index":"96",
+      "label":"Tacos",
+      "sugar":"1.6",
+      "calorie":"210"
+   },
+   {
+      "index":"97",
+      "label":"Takoyaki",
+      "sugar":"0.4",
+      "calorie":"145"
+   },
+   {
+      "index":"98",
+      "label":"Tiramisu",
+      "sugar":"12.2",
+      "calorie":"331.8"
+   },
+   {
+      "index":"99",
+      "label":"Tuna tartare",
+      "sugar":"0.4",
+      "calorie":"176"
+   },
+   {
+      "index":"100",
+      "label":"Waffles",
+      "sugar":"0",
+      "calorie":"294.3"
+   }
+]
