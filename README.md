@@ -28,10 +28,15 @@ https://grow.google/intl/id_id/bangkit/
 ## This project is developed by B21-CAP0203
 ### B21-CAP0203 Team Member:
 Ferdy Rahmaesa Suarial (A2292216) - Mobile Programming (Android) - Universitas Jenderal Soedirman
+
 Ayuk Hidayanti (A3142803) - Mobile Programming (Android) - Universitas Singaperbangsa Karawang
+
 Cut Aisyah Yunan (C3353001) - Cloud Computing - Universitas Yarsi
+
 Pashadidan Fadhillah (C0050394) - Cloud Computing - Universitas Bina Nusantara
+
 Adhi Setiawan (M0060603) - Machine Learning - Universitas Brawijaya
+
 Ahimsa Imananda (M3352994) - Machine Learning - Universitas Yarsi
 
 
