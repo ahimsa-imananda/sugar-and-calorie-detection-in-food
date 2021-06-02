@@ -11,12 +11,8 @@ path_to_file = ""
 food_data_json = open('food_data.json',)
 food_data_dict = json.load(food_data_json)
 food_data_json.close()
-@app.route('/')
+@app.route('/', methods = ['GET','POST'])
 def index():
-    return render_template('index.html')
-
-@app.route('/upload-picture', methods = ['GET','POST'])
-def upload_file():
     if request.method == 'POST':
         file = request.files['file']
         path_to_file = file.filename
@@ -25,7 +21,8 @@ def upload_file():
         os.remove('image-uploaded/' + path_to_file)
         return json_res
     else:
-        return render_template('uploadPict.html')
+        print("Rendered")
+        return render_template('index.html')
 
 def predict(image_path):
     path = image_path
@@ -39,7 +36,7 @@ def predict(image_path):
     predicted_sugar = food_data_dict[max_index]["sugar"]
     predicted_calorie = food_data_dict[max_index]["calorie"]
     result = (path + " is a " + predicted_label + " with " + predicted_sugar + "g of Sugar \ 100g and with " + predicted_calorie + " cal of Calorie \ 100 g")
-    return jsonify({'index':predicted_index, 'text_result':result, "label":predicted_label, "sugar":predicted_sugar, "calorie":predicted_calorie})
+    return jsonify({'index':predicted_index, 'file_name':image_path,'text_result':result, "label":predicted_label, "sugar":predicted_sugar, "calorie":predicted_calorie})
 
 def load_saved_model(model_name):
     loaded_model = tf.keras.models.load_model(model_name)

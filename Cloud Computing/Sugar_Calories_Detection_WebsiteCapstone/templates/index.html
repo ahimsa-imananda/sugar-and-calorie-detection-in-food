@@ -3,33 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>sweetect.com</title>
+    <title>Home | Sweetect</title>
     <!--Cara load asset untuk Flask menggunakan url_for -->
     <link rel="stylesheet" href="{{ url_for('static',filename='assets/styles/style.css') }}">
     </head>
 <body>
- 
     <header>
-        <!-- <nav>
-            <ul>
-                <div class="headerhead">
-
-                    <div class="navtitle">
-                        <li><a class="jumbotron" href="index.html">SUCA</a></li>
-                    </div>
-    
-                    <div class="navButton">
-                        <li><a href="#Feature">Feature</a></li>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#ContactUs">Contact</a></li>
-                    </div>
-
-                </div>
-
-            </ul>
-        </nav>
-           -->
-        
         <a href="/"><img class="navtitle" src="{{ url_for('static',filename='assets/image/Logo-Sweetect-nobg-2.png') }}" alt="logo"></a>
         <nav>
             <ul class="navlinks">
@@ -61,81 +40,77 @@
 
                         <div class="featureDesc-2">
                             <p>Check how many sugar and calories on your meals to <br> achive a healthier lifestyle.</p>
-                            <br>
-                            <a href="/upload-picture"><img src="{{ url_for('static',filename='assets/image/uploadPicture2.png') }}"></a>
-                            <!-- <a href="#">
-                                <div class="takepictBtn">
-                                    <p class="takePictTitle">Take Picture</p>
-                                    <img src="assets/image/ant-design_camera-filled.png" class="takePictImg">
-                                </div>
-                            </a> -->
+                            
+                            <div>
+                
+                                <form method = "POST" enctype = "multipart/form-data" align="center" name="fileInfo">
+                                    <label for="files" class="pointer"><img src="{{ url_for('static',filename='assets/image/uploadPicture2.png') }}"></label>
+                                    <br>
+                                    <input accept="image/*" type='file' id="files" class="ChooseBtn" name="file" style="visibility:hidden;"/>
+                                    <br>
+                                    <!-- <img id="imgPrev" src="#" alt="your image" /> -->
+                                    <input type="submit" class="submitBtn"></input>
+                                </form>
+                    
+                            </div>
                         </div>
 
-
-
-                        <!-- <div class="uploadPict">
-                            <div class="grid-container-uploadPict midText">
-
-                                <div class="grid-child-uploadPict-1">
-                                    <a href="#"><img src="assets/image/takePicture.png"></a>
-                                    <a href="#">
-                                        <div class="takepictBtn">
-                                            <p class="takePictTitle">Take Picture</p>
-                                            <img src="assets/image/ant-design_camera-filled.png" class="takePictImg">
-                                        </div>
-                                    </a>
-
-                                </div>
-                            
-                                <div class="grid-child-uploadPict-2">
-                                    <a href="#"><img src="assets/image/uploadPicture.png"></a>
-                                    <a href="#">
-                                        <div class="uploadpictBtn">
-                                            <p class="uploadPictTitle">Upload Picture</p>
-                                            <img src="assets/image/foundation_upload.png" class="uploadPictImg">
-                                        </div>
-                                    </a>
-                                </div>
-
-
-                                <div>
-                                    <button type="button">Click Me!</button>
-                                </div>
-                              
-                            </div>
-                            
-                        </div> -->
-
                     </div>
                 </div>
 
-                <!-- <div class="flex-container">
 
-                    <div class="flex-child magenta">
-                        <img src="assets/image/image-removebg-preview.png" class="featured-image">
+           </article>
+
+           <article id="Result" class="card">
+
+            <div class="resultTitle">
+                <h1 id = "foodDetected">Your Food</h1>
+            </div>
+
+            <div class="grid-container">
+
+
+                <div class="grid-resultChild-1 midText ">
+
+                    <div class="resultDesc-1">
+                        <div>
+                            <p class="howMany">
+                                How many of this food are you eating? (g)
+                            </p>
+                        </div>
+                        <div class="slidecontainer">
+                            <input type="range" min="100" max="1000" value="100" class="slider" id="myRange">
+                            <p class="">Value: <span id="demo"></span> g </p>
+                          </div>
+                        <div class="child-Titledesc-1">
+                            <p class="sgrLvlTitle">Sugar Level:</p>
+                        </div>
+
+                        <div class="child-desc-1">
+                            <p id="sugar" class="sgrLvl">0 g</p>
+                        </div>
+
+                        <div class="child-Titledesc-1-1">
+                            <p class="clrLvlTitle">Calorie Level:</p>
+                        </div>
+    
+                        <div class="child-desc-1-1">
+                            <p id= "calorie" class="clrLvl">0 g</p>
+                        </div>
                     </div>
-                    
-                    <div class="flex-child green">
-                        <h1>Take care of <br> your lifestyle.</h1>
-                        <p>Check how many sugar and calories on your meals to <br> achive a healthier lifestyle .</p>
-                    </div>
-                    
+
+
                 </div>
-
-                <div class="float-container">
-
-                    <div class="float-child green">
-                        <img src="assets/image/image-removebg-preview.png" class="featured-image">
+            
+                <div class="grid-resultChild-2 midText">
+                    <div class="bg-img-result">
+                        <img id="imgPrev" src="#" alt="your image" class="imagePrev" />
                     </div>
-                    
-                    <div class="float-child blue">
-                        <h1>Take care of <br> your lifestyle.</h1>
-                        <p>Check how many sugar and calories on your meals to <br> achive a healthier lifestyle .</p>
-                    </div>
-                    
-                </div> -->
+                </div>
+              
+            </div>
 
-
+                
            </article>
 
            
@@ -150,7 +125,11 @@
                     </div>
 
                     <div class="aboutDesc-2">
-                        <p>Our app can track the sugar and calorie content of your food, <br> which can control your eating patterns to be more healthier.</p>
+                        <p> Sweetect is an application that could classify food images with their Sugar and Calorie level. 
+                            <br> Sweetect is built using a machine learning model that is trained with the <a href="https://www.kaggle.com/dansbecker/food-101">Food101 Dataset.</a>
+                        <br> Learn more on our <a href="https://github.com/ahimsa-imananda/sugar-and-calorie-detection-in-food">GitHub</a>
+                        <br>
+                    </p>
                     </div>
 
                 </div>
@@ -207,6 +186,41 @@
     <footer>
         <p class="footer">Sugar & Calories Detection &#169; 2021, Bangkit 2021</p>
      </footer>
+     <script src="{{ url_for('static',filename='assets/styles/java.js') }}"></script>
+     <script>
+        var form = document.forms.namedItem("fileInfo");
+        var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  var sugar = document.getElementById("sugar")
+  var calorie = document.getElementById("calorie");
+  var sugarValue = 0
+  var calorieValue = 0
+form.addEventListener('submit', function(ev) {
+document.getElementById('foodDetected').innerHTML = "Please wait...."
+  var oData = new FormData(form);
+  var oReq = new XMLHttpRequest();
+  oReq.open("POST", "{{url_for('index')}}", true);
+  oReq.onload = function(oEvent) {
+    if (oReq.status == 200) {
+        sugarValue = JSON.parse(oReq.responseText).sugar;
+        calorieValue = JSON.parse(oReq.responseText).calorie;
+      document.getElementById('foodDetected').innerHTML = "Your food is " + JSON.parse(oReq.responseText).label;
+      sugar.innerHTML = + JSON.parse(oReq.responseText).sugar + " g";
+      calorie.innerHTML =  + JSON.parse(oReq.responseText).calorie + " cal";
+    } else {
+      alert("Error ");
+    }
+  };
+  oReq.send(oData);
+  ev.preventDefault();
+}, false); 
 
+output.innerHTML = slider.value;
+slider.oninput = function() {
+  output.innerHTML = this.value;
+  sugar.innerHTML = (sugarValue * this.value/100) + " g";
+  calorie.innerHTML= (calorieValue * this.value/100) + " cal";
+}
+</script>
 </body>
 </html>

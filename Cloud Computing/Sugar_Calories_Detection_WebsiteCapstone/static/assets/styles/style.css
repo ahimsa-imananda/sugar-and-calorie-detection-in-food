@@ -31,6 +31,9 @@ main{
     font-weight: bold;
  }
 
+
+ /* =====================FEATURE===================== */
+
  #Feature{
    padding: 6rem;
    background-color: #F6F9F8;
@@ -60,14 +63,28 @@ main{
    text-align: right;
 }
 
+.submitBtn{
+   border-color: #FF8882;
+   background-color: #FFFF;
+   color: #FF8882;
+   font-weight: bold;
+   border-radius: 10%;
+   font-size: 1rem;
+   padding: 0.5rem;
+   font-family: 'Mulish', sans-serif;
+   cursor: pointer
+}
 
+.pointer{
+   cursor: pointer
+}
 /* =====flex split===== */
 
 .uploadPict-1{
    text-align: right;
 }
 
-.takepictBtn{
+/* .takepictBtn{
    color: white;
    background-color: #FF8882;
    display: flex;
@@ -86,35 +103,112 @@ main{
    width: 25px;
    height: 25px;
    margin-top: 0.2rem;
-}
+} */
 
 .grid-child-uploadPict-2{
    text-align: left;
 }
 
-.uploadpictBtn{
-   color: #FF8882;
-   background-color: #194350;
-   display: flex;
-   border-radius: 20px;
-   padding: 20px;
-   width: 235px;
-   height: 66px;
+/* ==================RESULT================== */
+
+#result{
+   padding: 6rem;
 }
 
-.uploadPictTitle{
-   margin: 0.2rem 0.5rem 0.2rem 1rem;
-   font-size: 1.2rem;
+.resultTitle{
+   text-align: center;
+   font-family: 'Rubik', sans-serif;
+   font-size: 2.5rem;
+   margin-top: 2rem;
 }
 
-.uploadPictImg{
-   width: 25px;
-   height: 25px;
-   margin-top: 0rem;
+.resultDesc-1{
+   text-align: center;
+   font-family: 'Rubik', sans-serif;
+   font-size: 2.5rem;
+   color: #194350;
 }
+
+.howMany{
+   font-size: 2rem;
+   margin-left: 15rem;
+}
+
+.child-desc-1{
+   background-color: #EBF2F1;
+   margin-left: 15rem;
+   margin-right: 5rem;
+   padding: 1rem 0 1rem 0;
+   font-size: 1rem;
+}
+
+.child-desc-1-1{
+   margin-top: 1rem;
+   background-color: #EBF2F1;
+   margin-left: 15rem;
+   margin-right: 5rem;
+   padding: 1rem 0 1rem 0;
+   font-size: 1rem;
+}
+
+.child-Titledesc-1{
+   font-size: 1.5rem;
+   text-align: left;
+   margin-left: 15rem;
+}
+
+.child-Titledesc-1-1{
+   font-size: 1.5rem;
+   text-align: left;
+   margin-left: 15rem;
+}
+
+.sgrLvl{
+   text-align: left;
+   margin-left: 2rem;
+   font-size: 1.3rem;
+}
+
+.clrLvl{
+   text-align: left;
+   margin-left: 2rem;
+   font-size: 1.3rem;
+}
+
+.grid-resultChild-2{
+   margin-top: 1rem;
+   margin-left: 2rem;
+
+}
+
+.imagePrev{
+   margin: 5rem;
+   border-radius: 5%;
+}
+
+.bg-img-result{
+   background-color: #8ad5cb9c;
+   width: 40rem;
+   height: 30rem;
+   border-radius: 20%;
+}
+
+form{
+   margin-top: 5rem;
+}
+
+#imgPrev{
+   width: 30rem;
+   height: 20rem;
+}
+
+
+/* ==================ABOUT================== */
 
 #About{
    padding: 6rem;
+   margin-top: 5rem;
+   background-color: #F6F9F8;
 }
 
 .aboutDesc-1{
@@ -127,8 +221,12 @@ main{
 }
 
 .aboutCentered{
-   padding-top: 8rem;
+   padding-top: 6rem;
 }
+
+
+
+/* ==================CCONTACT US================== */
 
 #ContactUs{
    padding: 6rem;
@@ -195,66 +293,40 @@ header {
     border-color: #FF8882;
  }
 
- /* ================UPLOAD PICT HTML=================== */
-.uploadHeadTilte{
-   text-align: center;
-   font-family: 'Rubik', sans-serif;
-   font-size: 2.5rem;
-   margin-top: 2rem;
-}
-
-form{
-   margin-top: 5rem;
-}
-
-
-.ChooseBtn{
-   border-style: hidden;
-   border-radius: 5%;
-   background-color: #FF8882;
-   color: white;
-}
-
-#imgPrev{
-   max-width: 30rem;
-   max-height: 30rem;
-}
-
-footer2 {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   padding: 20px;
-   color: #194350;
-   background-color: #F6F9F8;
-   text-align: center;
-   font-weight: bold;
+ .slidecontainer {
+   width: 50%;
+   font-size: 1.5rem;
+   text-align: left;
+   margin-left: 15rem;
  }
-
-/* =========RESULT HTML========= */
-.resultHeadTilte{
-   text-align: center;
-   font-family: 'Rubik', sans-serif;
-   font-size: 2.5rem;
-   margin-top: 2rem;
-}
-
-.child-desc-1{
-   margin-left: 10rem;
-}
-
-.child-desc-1-1{
-   background-color: #FF8882;
-   margin-left: 10rem;
-   padding: 1rem 0 1rem 0;
-}
-
-.child-desc-2{
-   margin-right: 10rem;
-}
-
-.child-desc-2-1{
-   background-color: #8AD5CB;
-   margin-right: 10rem;
-   padding: 1rem 0 1rem 0;
-}
+ 
+ .slider {
+   -webkit-appearance: none;
+   width: 100%;
+   height: 25px;
+   background: #d3d3d3;
+   outline: none;
+   opacity: 0.7;
+   -webkit-transition: .2s;
+   transition: opacity .2s;
+ }
+ 
+ .slider:hover {
+   opacity: 1;
+ }
+ 
+ .slider::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   appearance: none;
+   width: 25px;
+   height: 25px;
+   background: #FF8882;
+   cursor: pointer;
+ }
+ 
+ .slider::-moz-range-thumb {
+   width: 25px;
+   height: 25px;
+   background: #FF8882;
+   cursor: pointer;
+ }
