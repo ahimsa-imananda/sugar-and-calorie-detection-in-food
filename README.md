@@ -1,7 +1,7 @@
 # SWEETECT
 Sweetect is a application that could classify food images with their Sugar and Calorie level.
-Sweetect is build using machine learning model that is trained using the Food101 Dataset.
-Sweetect is availble on Website and Android App:
+Sweetect is build using machine learning model that is trained using the Food101 Dataset (https://www.kaggle.com/dansbecker/food-101).
+Sweetect is available on Website and Android App:
 ### Website:
 https://sweetect-deployment-hhte7av7wq-as.a.run.app/
 ### Android:
