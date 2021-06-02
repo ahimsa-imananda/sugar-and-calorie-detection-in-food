@@ -7,7 +7,7 @@ https://sweetect-deployment-hhte7av7wq-as.a.run.app/
 ### Android:
 link here
 ### To Replicate our Project Follow this Document:
-link here
+https://docs.google.com/document/d/161tZ8TSEzGTJm-r2Oq1_MQmcekUbon0tXf5eAWdr6FE/edit?usp=sharing
 ### View our Project Brief Here:
 link here
 
@@ -22,10 +22,10 @@ calorie from food, how to evaluate the machine learning model, how to implement 
 learning model to an Android app or a Web app. 
 We want to create a platform to help people monitor their sugar and calorie intake so they can have a healthier lifestyle.
 
-## This project is developed as a part of Bangkit 2021 Capstone Project
+## This project is developed as a part of Bangkit 2021 Capstone Project:
 ### Learn mode about Bangkit here:
 https://grow.google/intl/id_id/bangkit/
-## This project is developed by B21-CAP0203
+## This project is developed by B21-CAP0203.
 ### B21-CAP0203 Team Member:
 Ferdy Rahmaesa Suarial (A2292216) - Mobile Programming (Android) - Universitas Jenderal Soedirman
 
