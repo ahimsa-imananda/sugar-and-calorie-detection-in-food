@@ -9,7 +9,7 @@ body {
    font-weight: 400;
    margin: 0;
    padding: 0;
-   background-color: : #F6F9F8;;
+   background-color: #F6F9F8;;
  }
 
  html{
@@ -53,11 +53,11 @@ main{
 
 .featureDesc-1{
    font-family: 'Rubik', sans-serif;
-   font-size: 2.5rem;
+   font-size: 2.25rem;
 }
 
 .featureDesc-2{
-   font-size: 1.5rem;
+   font-size: 1.25rem;
 }
 
 .featurePict{
