@@ -9,6 +9,7 @@ body {
    font-weight: 400;
    margin: 0;
    padding: 0;
+   background-color: : #F6F9F8;;
  }
 
  html{
@@ -26,7 +27,7 @@ main{
  footer {
     padding: 20px;
     color: #194350;
-    background-color: #F6F9F8;
+    
     text-align: center;
     font-weight: bold;
  }
@@ -55,6 +56,10 @@ main{
    font-size: 2.5rem;
 }
 
+.featureDesc-2{
+   font-size: 1.5rem;
+}
+
 .featurePict{
    height: 500px;
 }
@@ -64,15 +69,18 @@ main{
 }
 
 .submitBtn{
+   
+   background-color: #FF8882;
+   color: #FFFF;
    border-color: #FF8882;
-   background-color: #FFFF;
-   color: #FF8882;
+   border: 2px solid;
    font-weight: bold;
-   border-radius: 10%;
-   font-size: 1rem;
-   padding: 0.5rem;
+   border-radius:7%;
+   font-size: 1.2rem;
+   padding: 1rem 5rem 1rem 5rem;
    font-family: 'Mulish', sans-serif;
    cursor: pointer
+   
 }
 
 .pointer{
@@ -178,6 +186,7 @@ main{
 .grid-resultChild-2{
    margin-top: 1rem;
    margin-left: 2rem;
+   align-content: center;
 
 }
 
@@ -203,17 +212,46 @@ form{
 }
 
 
-/* ==================ABOUT================== */
+/* ==================Learn================== */
 
-#About{
+#Learn{
    padding: 6rem;
    margin-top: 5rem;
    background-color: #F6F9F8;
 }
 
+.learnDesc-1{
+   font-size: 2.5rem;
+   font-family: 'Rubik', sans-serif;
+}
+.learnDesc-2{
+   font-size: 1.5rem;
+}
+
+.learnPict{
+   height: 450px;
+}
+
+.learnCentered{
+   padding-top: 6rem;
+}
+
+
+/* ==================ABOUT================== */
+
+#About{
+   padding: 5rem;
+   margin-top: 5rem;
+   
+   
+}
+
 .aboutDesc-1{
    font-size: 2.5rem;
    font-family: 'Rubik', sans-serif;
+}
+.aboutDesc-2{
+   font-size: 1.5rem;
 }
 
 .aboutPict{
@@ -221,15 +259,17 @@ form{
 }
 
 .aboutCentered{
-   padding-top: 6rem;
+   padding-top: 3rem;
 }
 
 
 
-/* ==================CCONTACT US================== */
+/* ==================CONTACT US================== */
 
 #ContactUs{
    padding: 6rem;
+   background-color: #F6F9F8;
+   margin-bottom: 0%;
 }
 
 .contactusDesc-1{
@@ -243,6 +283,18 @@ form{
        padding: 0;
    }
 }
+
+table{
+   
+   border-collapse: collapse;
+   width: 100%;
+   border: 1px solid #F6F9F8;;
+    
+  }
+  th, td {
+    text-align: left;
+    padding: 16px;
+  }
 
 
 
@@ -280,18 +332,14 @@ header {
    cursor: pointer;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
 .sticky {
    position: fixed;
    top: 0;
    width: 100%;
  }
 
- table{
-    /* background-color: #FF8882; */
-    color: #194350;
-    border-color: #FF8882;
- }
+ 
 
  .slidecontainer {
    width: 50%;

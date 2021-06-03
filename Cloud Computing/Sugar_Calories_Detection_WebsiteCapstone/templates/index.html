@@ -12,7 +12,8 @@
         <a href="/"><img class="navtitle" src="{{ url_for('static',filename='assets/image/Logo-Sweetect-nobg-2.png') }}" alt="logo"></a>
         <nav>
             <ul class="navlinks">
-                <li><a href="#Feature">Featured</a></li>
+                <li><a href="#Feature">Feature</a></li>
+                <li><a href="#Learn">Learn</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#ContactUs">Contact</a></li>
             </ul>
@@ -43,18 +44,15 @@
                             
                             <div>
                 
-                                <form method = "POST" enctype = "multipart/form-data" align="center" name="fileInfo">
+                                <form method = "POST" enctype = "multipart/form-data" align="center" name="fileInfo" >
                                     <label for="files" class="pointer"><img src="{{ url_for('static',filename='assets/image/uploadPicture2.png') }}"></label>
                                     <br>
                                     <input accept="image/*" type='file' id="files" class="ChooseBtn" name="file" style="visibility:hidden;"/>
                                     <br>
-                                    <!-- <img id="imgPrev" src="#" alt="your image" /> -->
-                                    <input type="submit" class="submitBtn"></input>
+                                    <input type="submit" class="submitBtn"></input> 
                                 </form>
-                    
                             </div>
                         </div>
-
                     </div>
                 </div>
 
@@ -104,8 +102,11 @@
             
                 <div class="grid-resultChild-2 midText">
                     <div class="bg-img-result">
-                        <img id="imgPrev" src="#" alt="your image" class="imagePrev" />
+                        <img id="imgPrev" src="#" alt="Food Image Preview" class="imagePrev" /> <br><br><br>
+                        
+                        
                     </div>
+                     
                 </div>
               
             </div>
@@ -113,6 +114,34 @@
                 
            </article>
 
+           <article id="Learn" class="card">
+
+            <div class="grid-container">
+
+                <div class="grid-child-1 midText aboutCentered">
+                    <img src="{{ url_for('static',filename='assets/image/search.png') }}" class="aboutPict">
+                    
+
+                </div>
+            
+                <div class="grid-child-2 midText">
+                    <div class="aboutDesc-1">
+                        <h1>Did You Know?</h1>
+                        <h2>463 Million</h2>
+                        
+                    </div>
+
+                    <div class="learnDesc-2">
+                        <p>People around the world are suffering from Diabetes (IDF, 2019)</p>
+                        <p>The American Heart Association recommends no more than 6 teaspoons (25 grams) of added sugar a day 
+                            for women and 9 teaspoons (36 grams) for men. Generally, the recommended daily calorie intake is 2,000 calories a day for women and 2,500 for men.</p>
+                    </div>
+                </div>
+              
+            </div>
+
+                
+           </article>
            
            <article id="About" class="card">
 
@@ -152,23 +181,28 @@
                 <div class="contactusDesc-2">
 
                     <table class="contList" align="center" border="1">
-                        <tr>
-                            <th>Contact List:</th>
-                            <th>Machine Learning</th>
-                            <th>Andorid</th>
-                            <th>Cloud Computing</th>
-                        </tr>
-                        <tr>
-                            <td rowspan="2">B21-CAP0203</td>
-                            <td>M3352994@bangkit.academy</td>
-                            <td>A2292216@bangkit.academy</td>
-                            <td>C3353001@bangkit.academy</td>
-                        </tr>
-                        <tr>
-                            <td>M0060603@bangkit.academy</td>
-                            <td>A3142803@bangkit.academy</td>
-                            <td>C0050394@bangkit.academy</td>
-                        </tr>
+                        <address>
+                            <tr>
+                                <th><h3>Team ID</h3></th>
+                                <th><h3>Machine Learning</h3></th>
+                                <th><h3>Android Development</h3></th>
+                                <th><h3>Cloud Computing</h3></th>
+                            </tr>
+                            <tr>
+                                <td rowspan="2"><h3>B21-CAP0203</h3></td>
+                                <td><a href="mailto: M3352994@bangkit.academy">Ahimsa Imananda</a></td>
+                                <td><a href="mailto: A2292216@bangkit.academy">Ferdy Rahmaesa Suarial</a></td>
+                                <td><a href="mailto: C3353001@bangkit.academy">Cut Aisyah Yunan</a></td>
+
+                            </tr>
+                            <tr>
+                                <td><a href="mailto: M0060603@bangkit.academy">Adhi Setiawan</a></td>
+                                <td><a href="mailto: A3142803@bangkit.academy">Ayuk Hidayanti</a></td>
+                                <td><a href="mailto: C0050394@bangkit.academy">Pashadidan Fadhillah</a></td>
+                            </tr>
+                        </address>
+                        
+                        
                      </table>
 
                 </div>
@@ -184,7 +218,7 @@
 
     <br>
     <footer>
-        <p class="footer">Sugar & Calories Detection &#169; 2021, Bangkit 2021</p>
+        <p class="footer">SWEETECT: Sugar & Calories Detection &#169; 2021, Bangkit 2021</p>
      </footer>
      <script src="{{ url_for('static',filename='assets/styles/java.js') }}"></script>
      <script>
@@ -197,6 +231,7 @@
   var calorieValue = 0
 form.addEventListener('submit', function(ev) {
 document.getElementById('foodDetected').innerHTML = "Please wait...."
+location.href="/#Result"
   var oData = new FormData(form);
   var oReq = new XMLHttpRequest();
   oReq.open("POST", "{{url_for('index')}}", true);
