@@ -224,31 +224,31 @@
      <script>
         var form = document.forms.namedItem("fileInfo");
         var slider = document.getElementById("myRange");
-  var output = document.getElementById("demo");
-  var sugar = document.getElementById("sugar")
-  var calorie = document.getElementById("calorie");
-  var sugarValue = 0
-  var calorieValue = 0
-form.addEventListener('submit', function(ev) {
-document.getElementById('foodDetected').innerHTML = "Please wait...."
-location.href="/#Result"
-  var oData = new FormData(form);
-  var oReq = new XMLHttpRequest();
-  oReq.open("POST", "{{url_for('index')}}", true);
-  oReq.onload = function(oEvent) {
-    if (oReq.status == 200) {
-        sugarValue = JSON.parse(oReq.responseText).sugar;
-        calorieValue = JSON.parse(oReq.responseText).calorie;
-      document.getElementById('foodDetected').innerHTML = "Your food is " + JSON.parse(oReq.responseText).label;
-      sugar.innerHTML = + JSON.parse(oReq.responseText).sugar + " g";
-      calorie.innerHTML =  + JSON.parse(oReq.responseText).calorie + " cal";
-    } else {
-      alert("Error ");
-    }
-  };
-  oReq.send(oData);
-  ev.preventDefault();
-}, false); 
+        var output = document.getElementById("demo");
+        var sugar = document.getElementById("sugar")
+        var calorie = document.getElementById("calorie");
+        var sugarValue = 0
+        var calorieValue = 0
+        form.addEventListener('submit', function(ev) {
+        document.getElementById('foodDetected').innerHTML = "Please wait...."
+        location.href="/#Result"
+        var oData = new FormData(form);
+        var oReq = new XMLHttpRequest();
+        oReq.open("POST", "{{url_for('index')}}", true);
+        oReq.onload = function(oEvent) {
+            if (oReq.status == 200) {
+                sugarValue = JSON.parse(oReq.responseText).sugar;
+                calorieValue = JSON.parse(oReq.responseText).calorie;
+            document.getElementById('foodDetected').innerHTML = "Your food is " + JSON.parse(oReq.responseText).label;
+            sugar.innerHTML = + JSON.parse(oReq.responseText).sugar + " g";
+            calorie.innerHTML =  + JSON.parse(oReq.responseText).calorie + " cal";
+            } else {
+            alert("Error ");
+            }
+        };
+        oReq.send(oData);
+        ev.preventDefault();
+        }, false); 
 
 output.innerHTML = slider.value;
 slider.oninput = function() {
