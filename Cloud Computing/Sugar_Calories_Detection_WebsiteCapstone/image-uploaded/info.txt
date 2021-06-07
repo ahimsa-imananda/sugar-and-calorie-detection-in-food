@@ -1,0 +1,2 @@
+This folder will be used as a temporary folder for the image which the user uploaded.
+After finished predicting using the image, the image then will be deleted.
