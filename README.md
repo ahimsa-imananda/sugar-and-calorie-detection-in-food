@@ -1,6 +1,9 @@
 # SWEETECT
 Sweetect is an application that could classify food images with their Sugar and Calorie level.
 Sweetect is built using a machine learning model that is trained with the Food101 Dataset (https://www.kaggle.com/dansbecker/food-101).
+Sweetect Website is written in html, css, javascript, and the ML model is wrapped using Python Flask web service.
+Sweetect Android is written in Kotlin and developed using Android Studio.
+The website app is containerize using Docker and deployed onto Google Cloud Platform (GCP)'s service Google Cloud Run (GCR).
 Sweetect is available on Website and Android App:
 ### Website:
 https://sweetect-deployment-hhte7av7wq-as.a.run.app/
@@ -11,7 +14,7 @@ https://docs.google.com/document/d/161tZ8TSEzGTJm-r2Oq1_MQmcekUbon0tXf5eAWdr6FE/
 ### View our Project Brief Here:
 link here
 
-### Project Summary:
+### Summary:
 According to the International Diabetes Federation (IDF), In 2019 Indonesia is 7th in the world
 with 10.7 million people suffering from diabetes. Prof. Dr. dr. Ketut Suastika, SpPD-KEMD said
 on World Diabetes Day 2020: "Indonesians suffer most from diabetes type 2 which is caused by
