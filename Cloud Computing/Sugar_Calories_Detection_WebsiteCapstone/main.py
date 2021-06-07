@@ -50,7 +50,7 @@ def preprocess_image(image_path):
     return images
 
 def predict_using_model(image, batch_size):
-    model = load_saved_model("model.h5")
+    model = load_saved_model("model_with_regulerizer.h5")
     classes = model.predict(image, batch_size)
     return classes
 		
