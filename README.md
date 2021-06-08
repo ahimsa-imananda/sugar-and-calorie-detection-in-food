@@ -8,11 +8,9 @@ Sweetect is available on Website and Android App:
 ### Website:
 https://sweetect-deployment-hhte7av7wq-as.a.run.app/
 ### Android:
-link here
+https://drive.google.com/file/d/1TrTsAFby__mfYmxM3H-jtYCzuDKKC6Fy/view?usp=sharing
 ### To Replicate our Project Follow this Document:
 https://docs.google.com/document/d/161tZ8TSEzGTJm-r2Oq1_MQmcekUbon0tXf5eAWdr6FE/edit?usp=sharing
-### View our Project Brief Here:
-link here
 
 ### Summary:
 According to the International Diabetes Federation (IDF), In 2019 Indonesia is 7th in the world
