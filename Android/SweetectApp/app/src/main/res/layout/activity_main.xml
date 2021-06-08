@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/soft_grey"
     tools:context=".MainActivity">
 
     <TextView
@@ -24,9 +25,10 @@
         android:id="@+id/btn_select"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Select Picture"
+        android:text="@string/select_picture"
         android:fontFamily="@font/muli"
-        android:drawableRight="@drawable/ic_select"
+        android:textSize="14sp"
+        android:drawableEnd="@drawable/ic_select"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,9 +42,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/hard_pink"
-        android:drawableRight="@drawable/ic_camera"
+        android:drawableEnd="@drawable/ic_camera"
         android:fontFamily="@font/muli"
-        android:text="Take Picture"
+        android:textSize="14sp"
+        android:text="@string/take_picture"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_select" />

@@ -8,7 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="hard_pink">#FF8882</color>
+    <color name="soft_pink">#FFC2B4</color>
     <color name="dark_blue">#194350</color>
     <color name="dark_grey">#737B7D</color>
     <color name="soft_green">#9DBEB9</color>
+    <color name="soft_grey">#F6F9F8</color>
+
 </resources>
