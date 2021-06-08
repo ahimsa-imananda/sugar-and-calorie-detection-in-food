@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SweetectApp</string>
+    <string name="your_food">Your Food</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="select_picture">Select Picture</string>
+    <string name="predicted">Predicted</string>
+    <string name="please_select_predict_button_for_showing_your_sugar_and_calories">Please Select Predict Button For Showing Your sugar and Calories</string>
+    <string name="food_image">Food Image</string>
+    <string name="reselect_retake_food">Reselect / Retake Food</string>
 </resources>

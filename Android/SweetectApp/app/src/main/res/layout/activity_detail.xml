@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/soft_grey"
     tools:context=".DetailActivity">
 
     <TextView
@@ -14,7 +15,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="10dp"
         android:fontFamily="@font/rubik"
-        android:text="Your Food"
+        android:text="@string/your_food"
         android:textAlignment="center"
         android:textColor="@color/dark_blue"
         android:textSize="28sp"
@@ -25,28 +26,97 @@
 
     <ImageView
         android:id="@+id/food_photo"
-        android:layout_width="225dp"
+        android:layout_width="300dp"
         android:layout_height="225dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/food_name" />
+        app:layout_constraintTop_toBottomOf="@+id/food_name"
+        android:src="@drawable/logosweetect"
+        android:contentDescription="@string/food_image" />
+
+    <Button
+        android:id="@+id/btnPredicted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/predicted"
+        android:fontFamily="@font/muli"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_desc"
+        android:backgroundTint="@color/hard_pink"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/btn_select_take"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:drawableEnd="@drawable/ic_select"
+        android:fontFamily="@font/muli"
+        android:text="@string/reselect_retake_food"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:backgroundTint="@color/hard_pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sugar_chart" />
 
     <TextView
         android:id="@+id/food_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="48dp"
         android:fontFamily="@font/muli"
-        android:text="Food Description"
+        android:text="@string/please_select_predict_button_for_showing_your_sugar_and_calories"
         android:textAlignment="center"
         android:textColor="@color/dark_grey"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/food_photo" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/calorie_chart"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="160dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_desc" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/sugar_chart"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="160dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/food_desc" />
+
+    <ProgressBar
+        android:id="@+id/progbar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressBackgroundTint="@color/hard_pink"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnPredicted"
+        app:layout_constraintVertical_bias="0.426" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
